@@ -1,0 +1,498 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/raivo/source/repos/rmos5/verifoneecrprojects",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "AkweTu7JfScdaCQCq1mi5T8UlgOndEU6/Zug5DEJLmI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.AbortTransactionResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.AbortTransactionResultEventArgs.html",
+          "hash": "i04m8Nf44PeMthdy+8czS1H83lycdsA2OoOkYRsnJ4c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.CommandId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.CommandId.html",
+          "hash": "188b+AkGrqYBDLXQjd3tKusP57Q0l3yMFY7FtsnhANk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.CustomerRequestResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.CustomerRequestResultEventArgs.html",
+          "hash": "kEOq97UjMQJg8lI78lfbPyzBgCThGnlq8tCS+ICHtAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.DeviceControlResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.DeviceControlResultEventArgs.html",
+          "hash": "h3BpyqlxDrUKqeNw15TCBWRoTOGKusSRYJH0yOvU2Q4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.DeviceStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.DeviceStatus.html",
+          "hash": "pczwGG25aeNDalGwkMiXzsWdQd8fKpNbHaR7+ddtQ2o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.ECRTerminalException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.ECRTerminalException.html",
+          "hash": "xYzd+RngIXnr+SR0RQhBEDZHOovfOGLnVqGrfmxap8A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.ECRTerminalManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.ECRTerminalManager.html",
+          "hash": "21rssCWehXdPAHIQmNs5eFQzJsfYmolM5YaVfZXck+0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.ECRTerminalSessionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.ECRTerminalSessionException.html",
+          "hash": "52iGdX7VsR7LUS52QhodPbx1IgtDSHD+86PaB8g8A+U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.ExceptionEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.ExceptionEventArgs.html",
+          "hash": "Xerw6M2bYfEysKYKBllrqU/yGH5aBC7azct5TQcsUUg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.IECRTerminalManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.IECRTerminalManager.html",
+          "hash": "IqfYq8DY1Hcwen96QWHEoqRLN7xNa1ud7jtqAdAqHu4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.IUserPromptHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.IUserPromptHandler.html",
+          "hash": "rsFFQK5x4VJ+XjRhR2iyMxZTEv4o/5Ieg03vErtdP0Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.PaymentSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.PaymentSession.html",
+          "hash": "3bIwmfmqpV/HCB51iwBOers82gyUcR85FmNeHynafqY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.RefundSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.RefundSession.html",
+          "hash": "VUCnGB/jtaH2srCOfWV0wwTNmLZEu/mlKIjROgXaSZU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.RetrieveSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.RetrieveSession.html",
+          "hash": "d/ON/AUpSL14PsNKn5cW+X/ztfACbF9BTfeWvPXMuBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.ReversalSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.ReversalSession.html",
+          "hash": "E2KIgCIXiBmMH1svgSY7tsWVAHPeBmrAdM3LuFUECX4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.SessionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.SessionState.html",
+          "hash": "uYB0aHnb76c5RD35bvdKOkigp4tPimBuWS6gq5rVqF4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.SessionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.SessionType.html",
+          "hash": "AKyM1SBLODJLdyXwxvS9DUaEMKvjuHJ9rC7kE++Gf/o="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TerminalCommandAcceptedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TerminalCommandAcceptedEventArgs.html",
+          "hash": "jbwE+PzBk588/QK3zxQ/QjAuTtz7/yi6WaiCDUVRMnk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TerminalSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TerminalSession.html",
+          "hash": "PzrhK3kzVYTfH5SJPxCreUNq8Mvd7ZjfoTvIM7Tym8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionEventArgs.html",
+          "hash": "rGBnbYZje9wKW4KhAoPS/ydFDqz/RX3wgLuA8UnkTZY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionRequestTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionRequestTypes.html",
+          "hash": "VX0CQKc7+HlIh8yM04nP6ApPJqxfz4shZL7/BN5a6CE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionResultEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionResultEventArgs.html",
+          "hash": "AFgIPZfquJjS89HI5mb8Pns24TU5UgY4TQa3GOY8lJA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionResultExEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionResultExEventArgs.html",
+          "hash": "NvaKOrGm2pefIxUoyDBaShFQbCtY7wuNpkCMmVncb4U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionResultTextSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionResultTextSerializer.html",
+          "hash": "xh0U0cRGnBHhP+dfIRygas7qB0hHXiwv7LZoSTMnLwU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionStatusEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionStatusEventArgs.html",
+          "hash": "FErKxhU5CBoE9idjzwRv0cLRvxgMxuHMuaeisIbbTQk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.TransactionTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.TransactionTypes.html",
+          "hash": "l9oKKo1OLsWoU5oY6Umx5XbTiZCvkxDb7kzPf7BGD4k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.UserPromptEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.UserPromptEventArgs.html",
+          "hash": "/59LuMhwo2xjuL+5qe/hn64PGDViEncqa5afv8sYtzk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Verifone.ECRTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Verifone.ECRTerminal.html",
+          "hash": "k2gPy3ylEsIIdsp/XxtzV6Ut+kvyJJFb+tvuCd50AF8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.App.html",
+          "hash": "g+3kIaxT2WS5u6s5SLX4unCc4CNg5NBL+j5ZSUvCHFQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.DateTimeToStringConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.DateTimeToStringConverter.html",
+          "hash": "/La+COdb2OZGPOo9sBeZXB0OR5DyESgj/WQ+zrNS5yw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.ExceptionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.ExceptionExtensions.html",
+          "hash": "AquUmmlyxQVdYtqDD8j21923Gmems53izDk7h57bPRo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.MainWindow.html",
+          "hash": "yWCiy10yhqA35FxYK/Du40yr/c/ku4SCQsWTGSjb0lM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.TransactionTypeConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.TransactionTypeConverter.html",
+          "hash": "1jGDgnVsBLzq1o3dMgv5X0FjZSvAQYQKa3Us82PrdQw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.UserPromptDialog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.UserPromptDialog.html",
+          "hash": "3W9vK2onsfg34p3j0gx95lNZ5O0s6kvoVRMyL6OjByo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VerifonePaymentTerminal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VerifonePaymentTerminal.html",
+          "hash": "3MOmirisCrvbPRZgv8XYncNPePUkLjMg/wjTEV0Zhgw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "xPg31aOTHiZ6vI65s8GZxS27irTklEpN5KVVyMmg1uM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 1,
+          "skipped_file_count": 1
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 35,
+          "skipped_file_count": 18
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

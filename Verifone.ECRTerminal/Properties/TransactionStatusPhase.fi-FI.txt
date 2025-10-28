@@ -1,0 +1,18 @@
+0 = Odotetaan korttia.
+1 = Sirukortti asetettu.
+2 = Odotetaan magneettijuovan varamenettelyä.
+3 = Magneettijuovakortti luettu.
+4 = Kortin numero syötetään manuaalisesti.
+5 = Kielen valinta.
+6 = Sovelluksen valinta.
+7 = Kortinhaltijan tunnistus (esim. PIN).
+8 = Varmennus käynnissä.
+9 = Lähimaksukortti luettu.
+A = Tapahtuma alustettu.
+B = Päätteen mukaan musta lista puuttuu.
+C = Päätteen mukaan CAPK puuttuu.
+# = Esivarmennus-ID annettu.
+$ = Odotetaan AcceptTransaction-viestiä.
+Q = Kassajärjestelmän vahvistus vaaditaan (varamenettely, henkilötunnistus jne.).
+R = Tapahtuma valmis, odotetaan kortin poistamista.
+

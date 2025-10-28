@@ -1,0 +1,17 @@
+0 = Waiting for card.
+1 = Chip card inserted.
+2 = Waiting for magstripe fallback.
+3 = Magstripe card read.
+4 = Manual card number entry.
+5 = Language selection.
+6 = Application selection.
+7 = Cardholder verification (e.g. PIN).
+8 = Authorization in progress.
+9 = Contactless card read.
+A = Transaction initialized.
+B = Terminal reports blacklist missing.
+C = Terminal reports CAPK missing.
+# = Preauthorization ID provided.
+$ = Waiting for AcceptTransaction.
+Q = ECR confirmation required (fallback, ID check, etc.).
+R = Transaction complete, waiting for card removal.

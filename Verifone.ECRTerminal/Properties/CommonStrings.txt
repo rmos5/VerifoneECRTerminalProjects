@@ -1,0 +1,16 @@
+MessageTerminalCommunicationError = Connection to the payment terminal failed. Please try again.
+MessageTerminalStateOk = Terminal state OK.
+MessageBlacklistOldOrMissing = Blacklist old or missing.
+MessageCAPKFileOldOrMissing = CAPK file is old or missing.
+MessageCardReaderEmpty = Card reader is empty.
+MessageCardInserted = Card inserted.
+MessageProductionEnvironment = Production environment.
+MessageTestEnvironment = Test environment.
+MessageTCSMessageMissing = TCS message missing.
+MessageTCSMessagePresent = TCS message present.
+MessageTransactionAborted = Transaction aborted.
+MessageTransactionAbortFailed = Transaction abort failed.
+MessageLastSessionRunning = Last session is still running.
+MessageNoPreviousPaymentSessionToRetry = No previous payment session to retry.
+MessageLastSessionIsNotRetryable = Last session is not in a retryable state.
+PatternAllOfNAttemptsFailed = All of {0} attempts failed.

@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Verifone ECR Terminal Projects </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Verifone ECR Terminal Projects ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="verifone-ecr-terminal-projects">Verifone ECR Terminal Projects</h1>
+
+<p>This Visual Studio solution provides a complete implementation of the <strong>Verifone Electronic Cash Register (ECR) communication interface</strong> for .NET.<br>It includes a reusable class library for terminal communication and a WPF sample application that demonstrates and validates the ECR protocol behavior.</p>
+<h2 id="solution-overview">Solution Overview</h2>
+<p><strong>Solution file:</strong> <code>VerifoneECRTerminalProjects.sln</code><br><strong>Target environment:</strong> .NET Framework 4.6.2<br><strong>Developed with:</strong> Visual Studio 2022 (solution format version 12.00)</p>
+<h3 id="1-verifoneecrterminal-class-library">1. Verifone.ECRTerminal (Class Library)</h3>
+<p>This project contains the complete implementation of the <strong>ECR communication protocol</strong> for Verifone payment terminals.<br>It exposes a high-level API for controlling terminal operations, handling transactions, and processing responses.</p>
+<p><strong>Main responsibilities:</strong></p>
+<ul>
+<li>Manage communication between the POS system and the Verifone payment terminal.</li>
+<li>Provide event-driven notification for all protocol responses.</li>
+<li>Implement all essential transaction types (payment, refund, reversal, abort, retrieval).</li>
+<li>Control display messages, bonus and auxiliary modes.</li>
+<li>Maintain internal state control to prevent overlapping operations.</li>
+<li>Offer session tracking and structured exception handling.</li>
+<li>Support integration as a standalone NuGet package.</li>
+</ul>
+<p><strong>Typical use cases:</strong></p>
+<ul>
+<li>Integrate Verifone terminal operations into POS or ERP systems.</li>
+<li>Implement transaction automation or testing utilities.</li>
+<li>Provide a consistent and fault-tolerant interface for ECR transactions.</li>
+</ul>
+<p><strong>Structure overview:</strong></p>
+<pre><code>Verifone.ECRTerminal/
+├─ \n├─ Verifone.ECRTerminal.csproj.dtbcache.json\n├─ \n├─ AssemblyInfo.cs\n├─ CommonStrings.fi-FI.txt\n├─ CommonStrings.txt\n├─ CustomerBonusStatus.fi-FI.txt\n├─ CustomerBonusStatus.txt\n├─ Strings.Designer.cs\n├─ Strings.resx\n├─ TransactionStatusPhase.fi-FI.txt\n├─ TransactionStatusPhase.txt\n├─ TransactionStatusResultCode.fi-FI.txt\n├─ TransactionStatusResultCode.txt\n├─ TransactionStatusResultCodeUserPrompt.fi-Fi.txt\n├─ TransactionStatusResultCodeUserPrompt.txt\n├─ \n├─ 
+</code></pre><h3 id="2-verifonepaymentterminal-wpf-application">2. VerifonePaymentTerminal (WPF Application)</h3>
+<p>This project serves as a <strong>diagnostic and demonstration application</strong> for testing and validating the ECR library.</p>
+<p><strong>Main responsibilities:</strong></p>
+<ul>
+<li>Provide a user interface for interacting with the Verifone terminal.</li>
+<li>Allow configuration of COM port and operational settings.</li>
+<li>Execute test transactions, display terminal output, and show protocol events.</li>
+<li>Offer an environment for developers to verify integration behavior.</li>
+</ul>
+<p><strong>App features:</strong></p>
+<ul>
+<li>Manual and automated transaction initiation.</li>
+<li>Visual monitoring of responses and events.</li>
+<li>Configurable connection parameters (port, timeout, tracing).</li>
+<li>UI options for handling bonus card operations and display text modes.</li>
+</ul>
+<p><strong>Structure overview:</strong></p>
+<pre><code>VerifonePaymentTerminal/
+├─ \n├─ AssemblyInfo.cs\n├─ Settings.Designer.cs\n├─ Settings.settings\n├─ \n├─ \n├─ 
+</code></pre><h3 id="3-shared-components-and-packaging">3. Shared Components and Packaging</h3>
+<ul>
+<li><strong>NuGet Packaging:</strong><br>The library includes a <code>.nuspec</code> file for generating a NuGet package (<code>Verifone.ECRTerminal.nuspec</code>).</li>
+<li><strong>Configuration:</strong><br>Application-level settings are defined in <code>App.config</code> for port and behavior customization.</li>
+<li><strong>Documentation Support:</strong><br>The solution includes metadata suitable for DocFX documentation generation.</li>
+</ul>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verifone.ECRTerminal</td>
+<td>Class Library</td>
+<td>Core ECR protocol implementation</td>
+</tr>
+<tr>
+<td>VerifonePaymentTerminal</td>
+<td>WPF Application</td>
+<td>Diagnostic and demonstration tool</td>
+</tr>
+</tbody>
+</table>
+<p>This structure ensures the separation of concerns:<br>the <strong>library</strong> is suitable for production use and integration in other systems,<br>while the <strong>WPF app</strong> provides an interactive way to test, validate, and demonstrate the protocol logic.</p>
+<p><em>Last updated: 2025-10-28</em></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/rmos5/VerifoneECRTerminalProjects/blob/master/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
