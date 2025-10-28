@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [ "Verifone.ECRTerminal/bin/Release/Verifone.ECRTerminal.dll" ],
+          "exclude": [ "**/obj/**" ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      { "files": [ "api/**.yml", "api/index.md" ] },
+      { "files": [ "README.md", "toc.yml", "articles/**.md" ] }
+    ],
+    "template": [ "default" ],
+    "dest": "_site"
+  }
+}

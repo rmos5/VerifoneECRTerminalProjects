@@ -1,0 +1,5 @@
+0 = No bonus card detected.
+1 = Magstripe card.
+2 = Chip card.
+3 = NFC card.
+4 = Manually entered.

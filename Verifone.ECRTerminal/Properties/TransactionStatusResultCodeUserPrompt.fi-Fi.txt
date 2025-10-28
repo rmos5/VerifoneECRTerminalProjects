@@ -1,0 +1,9 @@
+2003 = Syötä varmennuskoodi:
+2004 = PIN-ohitus, hyväksy tapahtuma?
+2005 = Tarkista henkilöllisyys, hyväksytäänkö tapahtuma?
+2006 = Sirun luku epäonnistui, käytetäänkö magneettijuovaa?
+2007 = Swedbank-käyttö: syötä 4 viimeistä numeroa:
+2012 = PIN lukittu, hyväksytäänkö tapahtuma?
+2022 = Hyväksytäänkö tapahtuma?
+A000 = Allekirjoitus vaaditaan.
+

@@ -1,0 +1,16 @@
+MessageTerminalCommunicationError = Yhteys maksupäätteeseen epäonnistui. Kokeile uudelleen.
+MessageTerminalStateOk = Maksupäätteen tila OK.
+MessageBlacklistOldOrMissing = Estolista vanhentunut tai puuttuu.
+MessageCAPKFileOldOrMissing = "CAPK-tiedosto vanhentunut tai puuttuu."
+MessageCardReaderEmpty = Kortti puuttuu.
+MessageCardInserted = Kortti asetettu.
+MessageProductionEnvironment = Tuotantoympäristö.
+MessageTestEnvironment = Testiympäristö.
+MessageTCSMessageMissing = TCS-viesti puuttuu.
+MessageTCSMessagePresent = TCS-viesti haettu.
+MessageTransactionAborted = Maksutapahtuma keskeytetty.
+MessageTransactionAbortFailed = Maksutapahtuman keskeytys epäonnistui.
+MessageLastSessionRunning = Edellinen istunto on yhä käynnissä.
+MessageNoPreviousPaymentSessionToRetry = Ei aiempaa maksutapahtumaa uudelleenyritystä varten.
+MessageLastSessionIsNotRetryable = Edellinen istunto ei ole uudelleenyrityskelpoinen.
+PatternAllOfNAttemptsFailed = Kaikki {0} yritystä epäonnistuivat.
