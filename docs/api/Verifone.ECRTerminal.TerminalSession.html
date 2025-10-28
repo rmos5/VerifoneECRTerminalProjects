@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TerminalSession
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TerminalSession
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verifone.ECRTerminal.TerminalSession">
+  
+  
+  <h1 id="Verifone_ECRTerminal_TerminalSession" data-uid="Verifone.ECRTerminal.TerminalSession" class="text-break">Class TerminalSession
+  </h1>
+  <div class="markdown level0 summary"><p>Base type for all ECR terminal sessions, encapsulating common properties
+such as identity, timestamps, transaction identifiers, state transitions,
+and received results.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TerminalSession</span></div>
+      <div class="level2"><a class="xref" href="Verifone.ECRTerminal.PaymentSession.html">PaymentSession</a></div>
+      <div class="level2"><a class="xref" href="Verifone.ECRTerminal.RefundSession.html">RefundSession</a></div>
+      <div class="level2"><a class="xref" href="Verifone.ECRTerminal.RetrieveSession.html">RetrieveSession</a></div>
+      <div class="level2"><a class="xref" href="Verifone.ECRTerminal.ReversalSession.html">ReversalSession</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verifone.ECRTerminal.html">Verifone.ECRTerminal</a></h6>
+  <h6><strong>Assembly</strong>: Verifone.ECRTerminal.dll</h6>
+  <h5 id="Verifone_ECRTerminal_TerminalSession_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TerminalSession</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession__ctor_" data-uid="Verifone.ECRTerminal.TerminalSession.#ctor*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession__ctor" data-uid="Verifone.ECRTerminal.TerminalSession.#ctor">TerminalSession()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance with a randomly generated session ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TerminalSession()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession__ctor_" data-uid="Verifone.ECRTerminal.TerminalSession.#ctor*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession__ctor_System_String_" data-uid="Verifone.ECRTerminal.TerminalSession.#ctor(System.String)">TerminalSession(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance with the specified external correlation ID.
+If the parameter is <code>null</code> or empty, a random eight-character ID is generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TerminalSession(string sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>Optional external correlation identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_CompletedAt_" data-uid="Verifone.ECRTerminal.TerminalSession.CompletedAt*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_CompletedAt" data-uid="Verifone.ECRTerminal.TerminalSession.CompletedAt">CompletedAt</h4>
+  <div class="markdown level1 summary"><p>The time when the session reached a terminal state
+(Completed, Failed, Aborted, etc.); <code>null</code> while still active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? CompletedAt { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_CreatedAt_" data-uid="Verifone.ECRTerminal.TerminalSession.CreatedAt*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_CreatedAt" data-uid="Verifone.ECRTerminal.TerminalSession.CreatedAt">CreatedAt</h4>
+  <div class="markdown level1 summary"><p>The time when this session object was instantiated on the ECR side.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime CreatedAt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_Exception_" data-uid="Verifone.ECRTerminal.TerminalSession.Exception*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_Exception" data-uid="Verifone.ECRTerminal.TerminalSession.Exception">Exception</h4>
+  <div class="markdown level1 summary"><p>The exception that caused the session to enter the <a class="xref" href="Verifone.ECRTerminal.SessionState.html#Verifone_ECRTerminal_SessionState_Error">Error</a> state;
+<code>null</code> if the session completed successfully or is still active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception Exception { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_IsActive_" data-uid="Verifone.ECRTerminal.TerminalSession.IsActive*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_IsActive" data-uid="Verifone.ECRTerminal.TerminalSession.IsActive">IsActive</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this session is still in progress,
+meaning <a class="xref" href="Verifone.ECRTerminal.SessionState.html#Verifone_ECRTerminal_SessionState_Created">Created</a> or <a class="xref" href="Verifone.ECRTerminal.SessionState.html#Verifone_ECRTerminal_SessionState_Running">Running</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_IsEmptyTransactionId_" data-uid="Verifone.ECRTerminal.TerminalSession.IsEmptyTransactionId*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_IsEmptyTransactionId" data-uid="Verifone.ECRTerminal.TerminalSession.IsEmptyTransactionId">IsEmptyTransactionId</h4>
+  <div class="markdown level1 summary"><p>True if <a class="xref" href="Verifone.ECRTerminal.TerminalSession.html#Verifone_ECRTerminal_TerminalSession_TransactionId">TransactionId</a> equals
+<span class="xref">Verifone.ECRTerminal.ECRProtocol.EmptyTransactionId</span>, indicating that
+the terminal has not yet assigned an ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmptyTransactionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_SessionId_" data-uid="Verifone.ECRTerminal.TerminalSession.SessionId*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_SessionId" data-uid="Verifone.ECRTerminal.TerminalSession.SessionId">SessionId</h4>
+  <div class="markdown level1 summary"><p>Unique identifier for correlating this session with external systems,
+logs, or user interface components. Auto-generated if not supplied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SessionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_SessionType_" data-uid="Verifone.ECRTerminal.TerminalSession.SessionType*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_SessionType" data-uid="Verifone.ECRTerminal.TerminalSession.SessionType">SessionType</h4>
+  <div class="markdown level1 summary"><p>Indicates the logical purpose of this session
+(e.g., <a class="xref" href="Verifone.ECRTerminal.SessionType.html#Verifone_ECRTerminal_SessionType_Payment">Payment</a>, <a class="xref" href="Verifone.ECRTerminal.SessionType.html#Verifone_ECRTerminal_SessionType_Refund">Refund</a>, or <a class="xref" href="Verifone.ECRTerminal.SessionType.html#Verifone_ECRTerminal_SessionType_Reversal">Reversal</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionType SessionType { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verifone.ECRTerminal.SessionType.html">SessionType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_State_" data-uid="Verifone.ECRTerminal.TerminalSession.State*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_State" data-uid="Verifone.ECRTerminal.TerminalSession.State">State</h4>
+  <div class="markdown level1 summary"><p>Represents the current lifecycle phase of the session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionState State { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verifone.ECRTerminal.SessionState.html">SessionState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_TransactionId_" data-uid="Verifone.ECRTerminal.TerminalSession.TransactionId*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_TransactionId" data-uid="Verifone.ECRTerminal.TerminalSession.TransactionId">TransactionId</h4>
+  <div class="markdown level1 summary"><p>The transaction identifier assigned by the terminal.
+May remain the <span class="xref">Verifone.ECRTerminal.ECRProtocol.EmptyTransactionId</span> placeholder
+until the first <code>TransactionStatus</code> message is received.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TransactionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_TransactionResult_" data-uid="Verifone.ECRTerminal.TerminalSession.TransactionResult*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_TransactionResult" data-uid="Verifone.ECRTerminal.TerminalSession.TransactionResult">TransactionResult</h4>
+  <div class="markdown level1 summary"><p>The final transaction result payload supplied by the terminal when
+the session completes successfully; <code>null</code> until completion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransactionResultExEventArgs TransactionResult { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verifone.ECRTerminal.TransactionResultExEventArgs.html">TransactionResultExEventArgs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_TerminalSession_TransactionStatus_" data-uid="Verifone.ECRTerminal.TerminalSession.TransactionStatus*"></a>
+  <h4 id="Verifone_ECRTerminal_TerminalSession_TransactionStatus" data-uid="Verifone.ECRTerminal.TerminalSession.TransactionStatus">TransactionStatus</h4>
+  <div class="markdown level1 summary"><p>Holds the most recent transaction status event received from the terminal.
+Updated each time a new <code>TransactionStatus</code> message arrives.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransactionStatusEventArgs TransactionStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verifone.ECRTerminal.TransactionStatusEventArgs.html">TransactionStatusEventArgs</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

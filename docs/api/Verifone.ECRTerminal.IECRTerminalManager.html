@@ -1,0 +1,1046 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IECRTerminalManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IECRTerminalManager
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verifone.ECRTerminal.IECRTerminalManager">
+  
+  
+  <h1 id="Verifone_ECRTerminal_IECRTerminalManager" data-uid="Verifone.ECRTerminal.IECRTerminalManager" class="text-break">Interface IECRTerminalManager
+  </h1>
+  <div class="markdown level0 summary"><p>Defines the public contract for interacting with a Verifone payment terminal via ECR.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verifone.ECRTerminal.html">Verifone.ECRTerminal</a></h6>
+  <h6><strong>Assembly</strong>: Verifone.ECRTerminal.dll</h6>
+  <h5 id="Verifone_ECRTerminal_IECRTerminalManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IECRTerminalManager : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_IsDisposed_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.IsDisposed*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_IsDisposed" data-uid="Verifone.ECRTerminal.IECRTerminalManager.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether this manager instance has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_LastSession_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.LastSession*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_LastSession" data-uid="Verifone.ECRTerminal.IECRTerminalManager.LastSession">LastSession</h4>
+  <div class="markdown level1 summary"><p>Gets the most recently created or active terminal session,
+regardless of its current state (running, succeeded, or failed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TerminalSession LastSession { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verifone.ECRTerminal.TerminalSession.html">TerminalSession</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_TraceSerialBytes_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TraceSerialBytes*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TraceSerialBytes" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TraceSerialBytes">TraceSerialBytes</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether serial port traffic (raw bytes) is traced
+to diagnostic output for debugging purposes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TraceSerialBytes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_AbortTransaction_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.AbortTransaction*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_AbortTransaction" data-uid="Verifone.ECRTerminal.IECRTerminalManager.AbortTransaction">AbortTransaction()</h4>
+  <div class="markdown level1 summary"><p>Requests the terminal to abort the current transaction, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AbortTransaction()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_AcceptTransaction_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.AcceptTransaction*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_AcceptTransaction_System_String_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.AcceptTransaction(System.String)">AcceptTransaction(String)</h4>
+  <div class="markdown level1 summary"><p>Sends an acceptance for a paused transaction that requires ECR confirmation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AcceptTransaction(string transactionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td><p>The transaction identifier provided by the terminal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_ClearDisplayText_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.ClearDisplayText*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_ClearDisplayText" data-uid="Verifone.ECRTerminal.IECRTerminalManager.ClearDisplayText">ClearDisplayText()</h4>
+  <div class="markdown level1 summary"><p>Clears any text currently shown on the terminal display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearDisplayText()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_DisableAuxiliaryMode_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DisableAuxiliaryMode*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_DisableAuxiliaryMode" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DisableAuxiliaryMode">DisableAuxiliaryMode()</h4>
+  <div class="markdown level1 summary"><p>Disables auxiliary accept mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DisableAuxiliaryMode()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_DisableBonusCardMode_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DisableBonusCardMode*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_DisableBonusCardMode" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DisableBonusCardMode">DisableBonusCardMode()</h4>
+  <div class="markdown level1 summary"><p>Exits bonus card mode on the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DisableBonusCardMode()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_Disconnect_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.Disconnect*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_Disconnect" data-uid="Verifone.ECRTerminal.IECRTerminalManager.Disconnect">Disconnect()</h4>
+  <div class="markdown level1 summary"><p>Closes the underlying serial port and releases protocol resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Disconnect()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_DisplayText_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DisplayText*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_DisplayText_System_String_System_String_System_Boolean_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DisplayText(System.String,System.String,System.Boolean)">DisplayText(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Displays two lines of text on the terminal customer display.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DisplayText(string line1, string line2, bool bigFont)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">line1</span></td>
+        <td><p>Top line text.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">line2</span></td>
+        <td><p>Bottom line text.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bigFont</span></td>
+        <td><p>If <code>true</code>, uses larger font when supported.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_EnableAuxiliaryMode_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.EnableAuxiliaryMode*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_EnableAuxiliaryMode" data-uid="Verifone.ECRTerminal.IECRTerminalManager.EnableAuxiliaryMode">EnableAuxiliaryMode()</h4>
+  <div class="markdown level1 summary"><p>Enables auxiliary accept mode for special flows that require cashier confirmation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnableAuxiliaryMode()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_EnableBonusCardMode_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.EnableBonusCardMode*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_EnableBonusCardMode_System_Boolean_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.EnableBonusCardMode(System.Boolean)">EnableBonusCardMode(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Puts the terminal into bonus card mode to detect and read customer bonus information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void EnableBonusCardMode(bool autoReply)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">autoReply</span></td>
+        <td><p>If <code>true</code>, the terminal auto-acknowledges internal prompts.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_GetTransactions_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.GetTransactions*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_GetTransactions" data-uid="Verifone.ECRTerminal.IECRTerminalManager.GetTransactions">GetTransactions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TransactionResultEventArgs&gt; GetTransactions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_GetTransactions_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.GetTransactions*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_GetTransactions_System_String_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.GetTransactions(System.String)">GetTransactions(String)</h4>
+  <div class="markdown level1 summary"><p>Enumerates persisted transaction results from the specified directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TransactionResultEventArgs&gt; GetTransactions(string directoryPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">directoryPath</span></td>
+        <td><p>Absolute or relative directory path containing transaction files.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td><p>A sequence of deserialized <a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a> objects.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_Refund_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.Refund*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_Refund_System_Decimal_System_String_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.Refund(System.Decimal,System.String)">Refund(Decimal, String)</h4>
+  <div class="markdown level1 summary"><p>Starts a refund transaction for the specified amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Refund(decimal amount, string sessionId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to refund.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>Optional external session identifier for correlation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RejectTransaction_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RejectTransaction*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RejectTransaction_System_String_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RejectTransaction(System.String)">RejectTransaction(String)</h4>
+  <div class="markdown level1 summary"><p>Sends a rejection for a paused transaction that requires ECR confirmation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RejectTransaction(string transactionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td><p>The transaction identifier provided by the terminal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RequestBonusCardInfo_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RequestBonusCardInfo*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RequestBonusCardInfo_System_Boolean_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RequestBonusCardInfo(System.Boolean)">RequestBonusCardInfo(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Requests bonus card/customer info from the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RequestBonusCardInfo(bool stopActive)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">stopActive</span></td>
+        <td><p>If <code>true</code>, stops any active bonus mode after retrieval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RequestTerminalStatus_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RequestTerminalStatus*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RequestTerminalStatus" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RequestTerminalStatus">RequestTerminalStatus()</h4>
+  <div class="markdown level1 summary"><p>Requests the terminal to publish its current status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RequestTerminalStatus()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RequestTerminalVersion_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RequestTerminalVersion*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RequestTerminalVersion" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RequestTerminalVersion">RequestTerminalVersion()</h4>
+  <div class="markdown level1 summary"><p>Requests the terminal to publish its firmware/version information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RequestTerminalVersion()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RetrieveLastTransaction_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RetrieveLastTransaction*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RetrieveLastTransaction" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RetrieveLastTransaction">RetrieveLastTransaction()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the most recent transaction result from the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RetrieveLastTransaction()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RetrieveTCSMessage_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RetrieveTCSMessage*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RetrieveTCSMessage" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RetrieveTCSMessage">RetrieveTCSMessage()</h4>
+  <div class="markdown level1 summary"><p>Requests the latest TCS (terminal control system) message from the terminal, if supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RetrieveTCSMessage()</code></pre>
+  </div>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RetrieveTransaction_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RetrieveTransaction*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RetrieveTransaction_System_String_System_DateTime_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RetrieveTransaction(System.String,System.DateTime)">RetrieveTransaction(String, DateTime)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RetrieveTransaction(string transactionId, DateTime timestamp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_Reversal_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.Reversal*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_Reversal_System_String_System_DateTime_System_String_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.Reversal(System.String,System.DateTime,System.String)">Reversal(String, DateTime, String)</h4>
+  <div class="markdown level1 summary"><p>Starts a reversal for a previously authorized transaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Reversal(string transactionId, DateTime timestamp, string sessionId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">transactionId</span></td>
+        <td><p>The original transaction identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="parametername">timestamp</span></td>
+        <td><p>The timestamp of the original transaction.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>Optional external session identifier for correlation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_RunPayment_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RunPayment*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RunPayment_System_Decimal_System_Boolean_System_String_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RunPayment(System.Decimal,System.Boolean,System.String)">RunPayment(Decimal, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Starts a payment transaction for the specified amount.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RunPayment(decimal amount, bool isBonusHandled, string sessionId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Decimal</span></td>
+        <td><span class="parametername">amount</span></td>
+        <td><p>The amount to charge.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isBonusHandled</span></td>
+        <td><p>If <code>true</code>, ECR handles bonus card flow automatically.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td><p>Optional external session identifier for correlation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Verifone_ECRTerminal_IECRTerminalManager_TestTerminal_" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TestTerminal*"></a>
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TestTerminal" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TestTerminal">TestTerminal()</h4>
+  <div class="markdown level1 summary"><p>Sends a handshake/test command to verify communication with the terminal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TestTerminal()</code></pre>
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_AbortTransactionResultReceived" data-uid="Verifone.ECRTerminal.IECRTerminalManager.AbortTransactionResultReceived">AbortTransactionResultReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;AbortTransactionResultEventArgs&gt; AbortTransactionResultReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.AbortTransactionResultEventArgs.html">AbortTransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_BonusResultReceived" data-uid="Verifone.ECRTerminal.IECRTerminalManager.BonusResultReceived">BonusResultReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;CustomerRequestResultEventArgs&gt; BonusResultReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.CustomerRequestResultEventArgs.html">CustomerRequestResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_DeviceControlResultReceived" data-uid="Verifone.ECRTerminal.IECRTerminalManager.DeviceControlResultReceived">DeviceControlResultReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;DeviceControlResultEventArgs&gt; DeviceControlResultReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.DeviceControlResultEventArgs.html">DeviceControlResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_PurchaseCreated" data-uid="Verifone.ECRTerminal.IECRTerminalManager.PurchaseCreated">PurchaseCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionResultEventArgs&gt; PurchaseCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_RefundCreated" data-uid="Verifone.ECRTerminal.IECRTerminalManager.RefundCreated">RefundCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionResultEventArgs&gt; RefundCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_ReversalCreated" data-uid="Verifone.ECRTerminal.IECRTerminalManager.ReversalCreated">ReversalCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionResultEventArgs&gt; ReversalCreated</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TerminalCommandAccepted" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TerminalCommandAccepted">TerminalCommandAccepted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TerminalCommandAcceptedEventArgs&gt; TerminalCommandAccepted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TerminalCommandAcceptedEventArgs.html">TerminalCommandAcceptedEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TerminalError" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TerminalError">TerminalError</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;ExceptionEventArgs&gt; TerminalError</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.ExceptionEventArgs.html">ExceptionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TransactionInitialized" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TransactionInitialized">TransactionInitialized</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionEventArgs&gt; TransactionInitialized</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionEventArgs.html">TransactionEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TransactionResultReceived" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TransactionResultReceived">TransactionResultReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionResultEventArgs&gt; TransactionResultReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TransactionRetrieved" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TransactionRetrieved">TransactionRetrieved</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionResultEventArgs&gt; TransactionRetrieved</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionResultEventArgs.html">TransactionResultEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TransactionStatusChanged" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TransactionStatusChanged">TransactionStatusChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionStatusEventArgs&gt; TransactionStatusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionStatusEventArgs.html">TransactionStatusEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_TransactionTerminalAbortReceived" data-uid="Verifone.ECRTerminal.IECRTerminalManager.TransactionTerminalAbortReceived">TransactionTerminalAbortReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler&lt;TransactionStatusEventArgs&gt; TransactionTerminalAbortReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span>&lt;<a class="xref" href="Verifone.ECRTerminal.TransactionStatusEventArgs.html">TransactionStatusEventArgs</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Verifone_ECRTerminal_IECRTerminalManager_WakeupECRReceived" data-uid="Verifone.ECRTerminal.IECRTerminalManager.WakeupECRReceived">WakeupECRReceived</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event EventHandler WakeupECRReceived</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.EventHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
