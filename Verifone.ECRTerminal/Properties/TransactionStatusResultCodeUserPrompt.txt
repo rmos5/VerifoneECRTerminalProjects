@@ -1,0 +1,9 @@
+2003 = Enter authorization code:
+2004 = PIN bypass, accept transaction?
+2005 = Check ID, accept transaction?
+2006 = Chip read failed, use magstripe?
+2007 = Swedbank use: enter 4 digits:
+2012 = PIN blocked, accept transaction?
+2022 = Accept transaction?
+A000 = Signature required.
+
