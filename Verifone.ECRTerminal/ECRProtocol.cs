@@ -574,7 +574,7 @@ namespace Verifone.ECRTerminal
             string memberClass = _encoding.GetString(data, 22, 2);
             string statusText = StringResources.GetCustomerBonusStatusMessage(_encoding.GetString(new[] { status }));
 
-            Trace.WriteLine($"{nameof(HandleCustomerRequestResult)}:{nameof(status)}={status} ({statusText});{nameof(customerNumber)}={customerNumber};{nameof(memberClass)}={memberClass}", GetType().FullName);
+            Trace.WriteLine($"{nameof(HandleCustomerRequestResult)}:{status};{statusText};{customerNumber};{memberClass}", GetType().FullName);
 
             OnCustomerRequestResultReceived(customerNumber, memberClass, statusText);
         }

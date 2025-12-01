@@ -640,29 +640,88 @@ namespace Verifone.ECRTerminal
         }
 
         /// <summary>
-        /// Handles a case where a bonus card was found by updating the session and restarting payment with bonus handled.
+        /// Handles a bonus card detection event by updating the current payment session
+        /// and restarting the payment flow with the detected bonus information.
         /// </summary>
-        /// <param name="bonusInfo">Raw bonus information string from the terminal.</param>
-        private void HandleBonusCardFound(string bonusInfo)
+        /// <param name="e">Event data containing bonus card details and status information.</param>
+        private void HandleBonusCardFound(TransactionStatusEventArgs e)
         {
-            Trace.WriteLine($"{nameof(HandleBonusCardFound)}:{nameof(bonusInfo)}={bonusInfo}", GetType().FullName);
+            Trace.WriteLine($"{nameof(HandleBonusCardFound)}:{e}", GetType().FullName);
+
+            string customerNumber = e.Info?.Trim() ?? "";
             PaymentSession session = GetLastRunningSession() as PaymentSession;
 
             if (session != null)
             {
-                session.UpdateBonusInfo(bonusInfo, "", "");
+                session.UpdateBonusInfo(customerNumber, "", e.StatusResultCode, e.StatusResultCodeMessage);
                 session.MarkBonusDetectedAndHalted();
                 RunPayment(session.Amount, true);
             }
         }
 
         /// <summary>
-        /// Handles the "bonus card only" scenario by stopping bonus mode after a short delay.
+        /// Provides an extension point for derived classes to perform additional
+        /// processing after the framework has completed the default handling of a
+        /// bonus-card-only event.
+        /// <para>
+        /// The base implementation performs the following actions:
+        /// </para>
+        /// <list type="bullet">
+        /// <item>
+        /// <description>Schedules the disabling of bonus card mode.</description>
+        /// </item>
+        /// <item>
+        /// <description>Constructs and raises a <see cref="CustomerRequestResultEventArgs"/>
+        /// notification containing the parsed customer number and status message.</description>
+        /// </item>
+        /// <item>
+        /// <description>Raises a terminal-abort notification for the current transaction.</description>
+        /// </item>
+        /// </list>
+        /// <para>
+        /// Override this method when additional application-specific behavior is needed,
+        /// such as logging, analytics, UI updates, workflow transitions, or integration
+        /// with external systems. When overriding, call the base implementation unless
+        /// you intend to completely replace the built-in behavior.
+        /// </para>
         /// </summary>
-        private void HandleBonusCardOnly()
+        /// <param name="e">
+        /// The event data associated with the bonus card operation, including the raw
+        /// customer identifier and status information reported by the payment terminal.
+        /// </param>
+        protected virtual void HandleBonusCardOnlyAfter(TransactionStatusEventArgs e)
         {
-            Trace.WriteLine($"{nameof(HandleBonusCardOnly)}", GetType().FullName);
-            RunAction(() => DisableBonusCardMode(), 500);
+            RunAction(DisableBonusCardMode, 500);
+            string customerNumber = e.Info?.Trim() ?? "";
+            string statusMessage = e.StatusResultCodeMessage?.Trim() ?? "" + $"({e.StatusResultCode})";
+            OnCustomerRequestResultReceived(new CustomerRequestResultEventArgs(customerNumber, "", statusMessage));
+            OnTransactionTerminalAbortReceived(e);
+        }
+
+        /// <summary>
+        /// Performs the default handling of a bonus-card-only event. This includes
+        /// disabling bonus card mode, updating the active payment session (if one is
+        /// running), and invoking the post-processing step
+        /// <see cref="HandleBonusCardOnlyAfter(TransactionStatusEventArgs)"/>.
+        /// </summary>
+        /// <param name="e">
+        /// The event data containing bonus card information and status details.
+        /// </param>
+        private void HandleBonusCardOnly(TransactionStatusEventArgs e)
+        {
+            Trace.WriteLine($"{nameof(HandleBonusCardOnly)}:{e}", GetType().FullName);
+
+            string customerNumber = e.Info?.Trim() ?? "";
+            string statusMessage = e.StatusResultCodeMessage?.Trim() ?? "" + $"({e.StatusResultCode})";
+            PaymentSession session = GetLastRunningSession() as PaymentSession;
+
+            if (session != null)
+            {
+                session.UpdateBonusInfo(customerNumber, "", e.StatusResultCode, e.StatusResultCodeMessage);
+                session.MarkAborted();
+            }
+
+            HandleBonusCardOnlyAfter(e);
         }
 
         /// <summary>
@@ -844,10 +903,10 @@ namespace Verifone.ECRTerminal
 
                     // --- 2000–2999: Transaction paused, needs ECR confirmation ---
                     case "2001": // Bonus card found, continue with BonusHandled = 1
-                        RunAction(() => HandleBonusCardFound(e.Info?.Trim()));
+                        RunAction(() => HandleBonusCardFound(e));
                         break;
                     case "2002": // Bonus card only (no payment), abort
-                        RunAction(() => HandleBonusCardOnly());
+                        RunAction(() => HandleBonusCardOnly(e));
                         break;
                     case "2003": // Manual authorization required
                     case "2004": // PIN bypass needs ECR confirmation
@@ -1204,11 +1263,7 @@ namespace Verifone.ECRTerminal
                                 && session1.State == SessionState.BonusDetectedAndHalted)
                             {
                                 sessionId = session1.SessionId;
-                                bonusInfo = new CustomerRequestResultEventArgs(
-                                        session1.BonusCustomerNumber,
-                                        session1.BonusMemberClass,
-                                        session1.BonusStatusText);
-
+                                bonusInfo = new CustomerRequestResultEventArgs(session1.BonusCustomerNumber, session1.BonusMemberClass, session1.BonusStatusText);
                             }
                         }
                     }
@@ -1279,7 +1334,7 @@ namespace Verifone.ECRTerminal
                 //customer card only
                 if (session?.IsActive == true)
                 {
-                    session.UpdateBonusInfo(e.CustomerNumber, e.MemberClass, e.StatusText);
+                    session.UpdateBonusInfo(e.CustomerNumber, e.MemberClass, "", e.StatusText);
                 }
                 else
                 {
@@ -1619,7 +1674,12 @@ namespace Verifone.ECRTerminal
         public string BonusMemberClass { get; private set; }
 
         /// <summary>
-        /// Human-readable status text about the bonus/customer, if available.
+        /// Status code from terminal.
+        /// </summary>
+        public string BonusStatusCode { get; private set; }
+
+        /// <summary>
+        /// Human-readable status text from terminal.
         /// </summary>
         public string BonusStatusText { get; private set; }
 
@@ -1657,11 +1717,13 @@ namespace Verifone.ECRTerminal
         /// </summary>
         /// <param name="customerNumber">Bonus card/customer number.</param>
         /// <param name="memberClass">Membership class/level.</param>
+        /// <param name="statusCode">Status code from the terminal.</param>
         /// <param name="statusText">Status text from the terminal.</param>
-        internal void UpdateBonusInfo(string customerNumber, string memberClass, string statusText)
+        internal void UpdateBonusInfo(string customerNumber, string memberClass, string statusCode, string statusText)
         {
             BonusCustomerNumber = customerNumber;
             BonusMemberClass = memberClass;
+            BonusStatusCode = statusCode;
             BonusStatusText = statusText;
         }
     }
